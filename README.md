@@ -11,9 +11,13 @@ Mục tiêu chính là giúp các thành viên làm quen với:
     Tương tác với các phần tử (click, nhập liệu, chọn...).
     Áp dụng các hàm assertions (xác minh) để kiểm tra kết quả.
     Quản lý mã nguồn cơ bản với Git (sử dụng branch).
+
+    
 👥 Yêu cầu về nhóm
     Số lượng: Tối đa 2 người một nhóm.
     Công việc: Cùng nhau thảo luận, phân chia công việc và hoàn thiện các test case đã chọn.
+
+    
 📂 Yêu cầu về Quản lý Mã nguồn (Git)
     Repo: Lớp sẽ có một repository chung trên GitHub
     Branch: Mỗi nhóm BẮT BUỘC phải tạo một branch riêng từ branch main.
