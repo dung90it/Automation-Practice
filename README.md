@@ -1,5 +1,3 @@
-# Demo-Selenium
-Tất nhiên, đây là nội dung chi tiết và rõ ràng hơn cho dự án "Automation-Practice":
 
 🎯 Mục tiêu dự án
 
