@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BaseTest {
-    private TestRailClient trClient = new TestRailClient();
+    private final TestRailClient trClient = new TestRailClient();
     private String testRunId = "101";
     public WebWaits mWebWaits;
 

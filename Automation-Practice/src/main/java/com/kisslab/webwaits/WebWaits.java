@@ -14,9 +14,9 @@ import static com.kisslab.utils.Constants.TIMEOUT_FINDS;
 import static com.kisslab.utils.Constants.TIMEOUT_WAITS;
 
 public class WebWaits implements WebElements {
-    private WebDriver webDriver;
-    private WebDriverWait driverWait;
-    private WebDriverWait findWaits;
+    private final WebDriver webDriver;
+    private final WebDriverWait driverWait;
+    private final WebDriverWait findWaits;
 
 
     public WebWaits(WebDriver webDriver) {
@@ -74,7 +74,7 @@ public class WebWaits implements WebElements {
         try {
             return driverWait.until(ExpectedConditions
                     .visibilityOfElementLocated(item)).getText();
-        } catch (Exception ex) {
+        } catch (TimeoutException ex) {
             ex.printStackTrace();
             return "";
         }
@@ -85,7 +85,7 @@ public class WebWaits implements WebElements {
     public String untilUrl(String mUrl) {
         try {
             driverWait.until(ExpectedConditions.urlContains(mUrl));
-        } catch (Exception ex) {
+        } catch (TimeoutException ex) {
             ex.printStackTrace();
         }
         return getCurrentUrl();
